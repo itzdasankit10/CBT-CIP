@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Making the Navbar  -->
+    <nav class="navbar">
+        <div class="ss">
+            <h1>Event-Listing Page</h1>
+        </div>
+        <!-- Adding a Dark Mode Button -->
+        <div class="ll">
+            <button id="toto"> <img src="darkm.svg" alt="" srcset="" class="oo"></button>
+        </div>
+
+    </nav>
+    <!-- Making up of the form section -->
+    <main>
+        <div class="ev-form">
+            <h2>Create an Event</h2>
+            <form id="eventForm">
+                <div>
+                    <input type="text" class="eN" placeholder="Event Name" required>
+                </div>
+                <div>
+                    <input type="date" class="eD" required>
+                </div>
+                <div>
+                    <input type="time" class="eT" required>
+                </div>
+                <div>
+                    <input type="text" id="eventLocation" placeholder="Event Location" required>
+                </div>
+                <div>
+                    <button type="submit">Add Event</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- Place where upcoming events will be listed -->
+        <section class="est">
+            <h2>Upcoming Events</h2>
+            <ul id="events"></ul>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
