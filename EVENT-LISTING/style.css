@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", serif;
+    transition: background-color 0.3s, color 0.3s;
+    background-image: linear-gradient(to right, #333399, #6836ae, #9a33be, #cd27c8, #ff00cc);
+}
+
+
+.ss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.oo {
+    transition: transform 0.5s ease-in-out;
+}
+
+nav {
+    background: linear-gradient(135deg, #c91a86, #b83bc3, #4330c2);
+    padding: 10px 5%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #474747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav button:hover {
+    background-color: #555;
+}
+
+
+main {
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.ev-form,.est {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.ev-form input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #000;
+}
+
+
+.ev-form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    /* color: white; */
+    font-weight: 600;
+}
+
+.ev-form button {
+    background: linear-gradient(135deg, #e01391, #b83bc3, #4330c2);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ev-form button:hover {
+    background-color: #555;
+}
+
+.est ul {
+    list-style: none;
+}
+
+.est li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .ev-form{
+        max-width: 90%;
+    }
+
+    .ev-form input{
+        font-size: 0.9rem;
+    }
+
+    .est {
+        max-width: 90%;
+    }
+
+    
+    .ev-form button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav h1 {
+        font-size: 1rem;
+    }
+
+    .ev-form{
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    
+    .est {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .ev-form input{
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    
+    .ev-form button {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .est li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+body.dark {
+    background-image: linear-gradient(to right, #07333f, #242424, #7c7c7c, #333333, #38072e);
+    color: #ffffff;
+    transition: 1.5s ease-in;
+}
+
+body.dark nav {
+    background: linear-gradient(135deg, #333333, #222222);
+}
+
+body.dark .ev-form, body.dark .est {
+    background: linear-gradient(135deg, #444444, #333333);
+}
+
+body.dark #eventForm button{
+    background: linear-gradient(135deg, #444444, #444444);
+    box-shadow: 10px 10px 5px rgb(32, 32, 32);
+}
+
+body.dark #eventForm button:hover{
+    box-shadow: 5px 5px 5px rgb(183, 182, 182);
+    transition:0.51s;
+}
+body.dark h1{
+ 
+    color: #fff;
+}
+
+body.dark .est{
+     background: linear-gradient(135deg, #444444, #333333);    
+}
+
